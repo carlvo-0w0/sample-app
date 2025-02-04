@@ -10,7 +10,7 @@ steps:
     id: 'Build Docker image'
     args: ['build', '-t', 'us-west1-docker.pkg.dev/qwiklabs-gcp-04-31037e3d5bcf/my-repository/hello-cloudbuild:v1.0','.']
 
-  # Step 3: Push the Docker image to Artifact Registry
+  # Step 3: Push the Docker image to Artifact Registrys zao
   - name: 'gcr.io/cloud-builders/docker'
     id: 'Push Docker image'
     args: ['push', 'us-west1-docker.pkg.dev/qwiklabs-gcp-04-31037e3d5bcf/my-repository/hello-cloudbuild:v1.0']
